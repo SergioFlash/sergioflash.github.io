@@ -1,4 +1,5 @@
 ﻿
+
 //показываем окно функции "showA"
 function showA_panel_v_klass()
 {
@@ -10,7 +11,7 @@ function showA_panel_v_klass()
 //элемента "a"
 a_panel_v_klass.style.display = "block";
 a_panel_v_klass.style.top = "10px";
-a_panel_v_klass.style.left = "50px";
+a_panel_v_klass.style.left = "100px";
 }
 //Вызываем функцию "hideA", которая будет скрывать 
 //окно для элементов "a" и "b"
@@ -41,7 +42,7 @@ function showA_osnova_panel()
 //элемента "a"
 a_osnova_panel.style.display = "block";
 a_osnova_panel.style.top = "100px";
-a_osnova_panel.style.left = "300px";
+a_osnova_panel.style.left = "100px";
 }
 //Вызываем функцию "hideA", которая будет скрывать 
 //окно для элементов "a" и "b"
@@ -67,7 +68,7 @@ function showA_001()
 //элемента "a"
 a_001.style.display = "block";
 a_001.style.top = "150px";
-a_001.style.left = "300px";
+a_001.style.left = "100px";
 }
 //Вызываем функцию "hideA", которая будет скрывать 
 //окно для элементов "a" и "b"
@@ -87,7 +88,7 @@ function showA_002()
 //элемента "a"
 a_002.style.display = "block";
 a_002.style.top = "150px";
-a_002.style.left = "300px";
+a_002.style.left = "100px";
 }
 //Вызываем функцию "hideA", которая будет скрывать 
 //окно для элементов "a" и "b"
@@ -108,7 +109,7 @@ function showA_003()
 //элемента "a"
 a_003.style.display = "block";
 a_003.style.top = "150px";
-a_003.style.left = "300px";
+a_003.style.left = "100px";
 }
 
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -131,7 +132,7 @@ function showA_004()
 //элемента "a"
 a_004.style.display = "block";
 a_004.style.top = "150px";
-a_004.style.left = "300px";
+a_004.style.left = "100px";
 }
 
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -154,7 +155,7 @@ function showA_005()
 //элемента "a"
 a_005.style.display = "block";
 a_005.style.top = "150px";
-a_005.style.left = "300px";
+a_005.style.left = "100px";
 }
 
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -177,7 +178,7 @@ function showA_006()
 //элемента "a"
 a_006.style.display = "block";
 a_006.style.top = "150px";
-a_006.style.left = "300px";
+a_006.style.left = "100px";
 }
 
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -200,7 +201,7 @@ function showA_007()
 //элемента "a"
 a_007.style.display = "block";
 a_007.style.top = "150px";
-a_007.style.left = "300px";
+a_007.style.left = "100px";
 }
 
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -225,7 +226,7 @@ b_008.style.display = "block";
 //элемента "a"
 a_008.style.display = "block";
 a_008.style.top = "150px";
-a_008.style.left = "300px";
+a_008.style.left = "100px";
 }
 
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -247,7 +248,7 @@ function showA_009()
 //элемента "a"
 a_009.style.display = "block";
 a_009.style.top = "150px";
-a_009.style.left = "300px";
+a_009.style.left = "100px";
 }
 
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -269,7 +270,7 @@ function showA_010()
 //элемента "a"
 a_010.style.display = "block";
 a_010.style.top = "150px";
-a_010.style.left = "300px";
+a_010.style.left = "100px";
 }
 
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -292,7 +293,7 @@ function showA_011()
 //элемента "a"
 a_011.style.display = "block";
 a_011.style.top = "150px";
-a_011.style.left = "300px";
+a_011.style.left = "100px";
 }
 
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -315,7 +316,7 @@ function showA_god()
 //элемента "a"
 a_god.style.display = "block";
 a_god.style.top = "150px";
-a_god.style.left = "300px";
+a_god.style.left = "100px";
 }
 
 //Вызываем функцию "hideA", которая будет скрывать 
