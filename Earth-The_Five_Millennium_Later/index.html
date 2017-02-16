@@ -1,0 +1,276 @@
+﻿<!DOCTYPE HTML public>
+<html>
+<head>
+    <META name="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="cache-control" content="public"/>
+
+
+    <link rel="stylesheet" href="Stili_God_Games.css" type="text/css" />
+    <script type="text/javascript" src="jquery-2.2.1.js" ></script>	
+	<script type="text/javascript" src="Funcsional_Game.js"></script>
+	<script type="text/javascript" src="modal_okno.js"></script>
+	<script src="http://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
+	
+	
+	<title>The Earth 5000 of years later</title>
+
+
+<style>
+ 
+ 
+
+ 
+</style>
+</head>
+<body>
+
+<!-- Модальное окно панели -->
+	<a href="#" onclick="showA_panel_v_klass();" class="pages">Выбор</a>
+    <div id="a_panel_v_klass"><div id="all_panel_v_klass">
+    <!-- Можно внести данные в модальное окно -->
+	
+	<a href="#" onclick="showA_god();" class="pages">Бог</a>
+    <div id="a_god"><div id="windows_osnovnoe">
+    <!-- Можно внести данные в модальное окно -->
+	<p id="visual_god_ok">Бог</p>
+    <!-- Окончание внесения данных -->
+    <a href="#" onclick="hideA_god();" class="pages" 
+    style="float: right;">Х</a>
+    </div></div>
+    <div id="b_god"></div>
+	
+	
+	
+	
+	
+	<!-- Модальное окно Склада героя -->
+	<a href="#" onclick="showA_002();" class="pages">Склад</a>
+    <div id="a_002"><div id="windows_osnovnoe">
+    <!-- Можно внести данные в модальное окно -->
+	<p id="visual_sklad">Склад</p>
+    <!-- Окончание внесения данных -->
+    <a href="#" onclick="hideA_002();" class="pages" 
+    style="float: right;">Х</a>
+    </div></div>
+    <div id="b_002"></div>
+
+	
+	
+	
+	
+	
+	
+	
+    <!-- Окончание внесения данных -->
+    <a href="#" onclick="hideA_panel_v_klass();" class="pages" 
+    style="float: right;">Х</a>
+    </div></div>
+    <div id="b_panel_v_klass"></div>
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+      
+	   <!-- Окно аватара Молодого Бога и его настройки (цвет, граница окна и другое) -->
+	  
+
+       <div id="God"/>
+       <a id="StrokaAvatar" class="PokazBlok">-----God-----</a>
+	   <div class="SkritAll" >
+			
+	        <p id="Stroka01" ><img id="column" src="Siluet.jpg" />
+			
+			  Уровень 1
+			  Здоровье-1000
+			  Броня----25
+			  Мана-----100
+			  Нач.Мана-20
+			  
+			
+			</p>
+
+	    </div>
+	 </div>
+	 
+	   
+	   <!-- Все настройки значения Описания Молодого Бога -->
+	   
+	   
+	    <div id="God_Opisanie"/>
+	    <a id="BlokiZagruzok"
+		
+		href="#" class="PokazBlok">Описание</a>   
+	    <div class="SkritAll">
+			
+	        <p id="Stroka01"> 
+
+			 Вы когда-то были обычным человеком. 
+			 Потом достигли определенного уровня просветления. 
+			 Вознеслись и стали Богом.
+             Вы независимы от людей. Вы имеете свой собственный летающий остров.
+             Легкое начало. Не тратится энергия на пропуск монстров. 
+			 Вы Бог и ваши показатели усилены. 
+			 Доступно уникальное строение.
+			</p>
+
+	    </div>
+        </div>
+		
+	   
+	    <!-- Все настройки значения Бонуса Молодого Бога -->
+	    
+		
+		<div id="God_Bonus"/>
+	    <a id="BlokiZagruzok"
+		
+		href="#"  class="PokazBlok">Бонус</a>   
+	    <div class="SkritAll">
+	    <p id="Stroka01"  > 
+			5% К основным параметрам, 
+			Ваши друзья дают бонус к скорости восстановления энергии и добычи Божественной Субстанции.
+			</p>
+	    </div>
+        </div>
+	   
+	   
+	    <!-- Все настройки Окна Новой Игры от лица Молодого Бога -->
+	    
+	   
+	   <button id="God_New_Game" name="send" onclick="location.href='God_Way.html'" >Новая Игра</button>
+        
+
+		
+		
+		
+	   
+	   <!-- Окно аватара Принца и его настройки (цвет, граница окна и другое) -->
+	  
+      
+       <div id="Prins"/>
+       <p id="StrokaAvatar">
+	   
+	   ---------Принц---------
+	   
+	   <img src="Siluet.jpg" />
+	   </p>
+       </div>
+
+	   
+	   <!-- Все настройки значения Принц Описания -->
+	   
+	   
+	    <div id="Prins_Opisanie"/>
+	    <a id="BlokiZagruzok"
+		
+		href="#" class="PokazBlok">Описание</a>   
+	    <div class="SkritAll">
+			
+	    <p id="Stroka01"> 
+			 Вы достигли совершеннолетия.
+			 Потому пора вам доказать своей семье, что вы способны править народом.
+			 Вас отправили в дальние владения, где вы должны показать на что способны.
+		</p>	
+	    </div>
+        </div>
+		
+	    
+	    <!-- Все настройки значения Бонуса Принца -->
+	    
+		
+		<div id="Prins_Bonus"/>
+	    <a id="BlokiZagruzok"
+		
+		href="#"  class="PokazBlok">Бонус</a>   
+	    <div class="SkritAll">
+	    <p id="Stroka01">
+			Ваши друзья дают бонус к скорости восстановления энергии и добычи золота.
+			Доступен найм Наёмников.
+			Вы являетесь владельцем небольшого города.
+			</p>
+	    </div>
+        </div>
+	   
+	   
+	    <!-- Все настройки Окна Новой Игры от лица Принца -->
+	   
+	   
+	   <button id="Prins_New_Game"
+	           onclick="location.href='Prince Way.html'"
+			   name="send">Новая Игра</button>
+	           
+	   
+	   <!-- Окно аватара Скитальца и его настройки (цвет, граница окна и другое) -->
+	   
+	   
+       <div id="Skitales"/>
+       <p id="StrokaAvatar">
+	   
+	   -------Скиталец-------
+	   
+	   <img src="Siluet.jpg" />
+	   </p>
+       </div>
+
+	   
+	   <!-- Все настройки значения Скитальца Описания -->
+	   
+	   
+	    <div id="Skitales_Opisanie"/>
+	    <a id="BlokiZagruzok"
+		
+		href="#" class="PokazBlok">Описание</a>   
+	    <div class="SkritAll">
+	    <p id="Stroka01"> 
+			 Вы проснулись от длительного сна.
+			 Как оказалось с того времени, как вы уснули прошло более 5000 лет.
+			 Все это время вы спали в Капсуле Времени, в специальном Бункере.
+			 Пока вы спали над вами проводили множество опытов, которые значительно изменили вас.
+			 Теперь вам необходимо познать этот новый Мир и самого себя.
+			</p>
+	    </div>
+        </div>
+		
+	   
+	    <!-- Все настройки значения Бонуса Скитальца -->
+	   
+		
+		<div id="Skitales_Bonus"/>
+	    <a id="BlokiZagruzok"
+		
+		href="#"  class="PokazBlok">Бонус</a>   
+	    <div class="SkritAll">
+	    <p id="Stroka01">
+			Вам доступны уникальные навыки.
+			Ваши друзья дают бонус к скорости восстановления энергии.
+			</p>
+	    </div>
+        </div>
+	   
+	   
+	   <!-- Все настройки Окна Новой Игры от лица Скитальца -->
+	   
+	   
+	   <button id="Skitales_New_Game"
+	           name="send">Игра не доступна</button>
+	   
+	   
+	   
+	  
+	   
+
+ 
+</body>
+</html>

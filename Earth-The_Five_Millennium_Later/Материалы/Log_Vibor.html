@@ -1,0 +1,103 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-2.2.1.js" ></script>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<script type="text/javascript" src="Funcsional_Game.js"></script>
+	
+	<title>The Earth 5000 of years later</title>
+	
+
+
+
+<style>
+ 
+		
+		
+		#God {position: absolute; top: 100px; left: 100px;}
+	    #indigenouspeople {position: absolute; top: 300px; left: 100px;}
+	    #Lostintime {position: absolute; top: 500px; left: 100px;}
+		
+		
+		#spoiler_body01 {position: fixed; top: 100px; left: 300px;}
+		#spoilers01 {position: fixed; top: 100px; left: 400px;}
+					
+        #spoiler_body02 {position: fixed; top: 300px; left: 300px;}
+		#spoilers02 {position: fixed; top: 300px; left: 400px;}
+
+		#spoiler_body03 {position: fixed; top: 500px; left: 300px;}
+		#spoilers03 {position: fixed; top: 500px; left: 400px;}
+		
+		
+		
+		.SKRTextGod {display: none;}
+		a.PokazTextGod:hover+div {display: block;}
+		
+		.SKRTextGod02 {display: none;}
+		a.PokazTextGod02:hover+div {display: block;}
+		
+		
+		
+		
+</style>
+<body>
+
+       <div id="God" class="God"/>
+       <p>Бог</p>
+       
+	   <a href="#" class="PokazTextGod02">Бонус</a>   
+	   <div class="SKRTextGod02">
+	   <p>1000 Жизней, 25 Брони, 20 Начальной Маны, 5% К основным параметрам, Каждые 10 друзей добавляют 1% к накоплению Божественной Субстанции</p>
+	   </div>
+       </div>
+       <div id="indigenouspeople" class="indigenouspeople"/>
+       <p>Кореной Житель</p>
+       <img src="Siluet.jpg"; onclick=$("div[class^='spoiler_body02']").show('normal') />
+	   </div>
+
+       <div id="Lostintime" class="Lostintime"/>
+       <p>Потерянный во времени</p>
+       <img src="Siluet.jpg"; onclick=$("div[class^='spoiler_body03']").show('normal') />
+	   </div>
+
+	<div id="spoiler_body01" class="spoiler_body01" style="display:none">
+	<a href="#" class="PokazTextGod">Описание!</a>
+	<div class="SKRTextGod">
+	<p>Вы когда-то были обычным человеком. Но потом достигли определенного уровня просветления. Вознеслись и стали Богом.</p>
+    <p>Вы независимы от людей. Вы имеете свой собственный летающий остров.</p>
+    <p>Легкое начало. Вы не тратите энергию на отступ от монстров. Вы Бог и ваши показатели усилены. Доступно уникальное строение.</p>
+	</div>
+    <input id="spoilers01" type="button" value="Закрыть" onclick=$("div[class^='spoiler_body']").hide('normal') >
+	
+ </div>
+
+
+	  
+	   
+    <div id="spoiler_body02" class="spoiler_body02" style="display:none">
+	<p><img src="bogini.bmp"></p>
+	<p>Вы родились и выросли в этом мире в знатной семье. В ваше совершеннолетие родители отправляют вас в дальние владения</p>
+    <p>Вы должны доказать своим родителям, что способны править народом и защищать земли от набегов монстров</p>
+    <p>Средняя сложность</p>
+    <input id="spoilers02" type="button" value="Закрыть" onclick=$("div[class^='spoiler_body']").hide('normal') >
+	
+	
+ </div>
+
+    <div id="spoiler_body03" class="spoiler_body03" style="display:none">
+	<p><img src="bogini.bmp"></p>
+	<p>Однажды вы потеряли сознание, и неведая проспали в Капсуле Времени более 5000 лет.</p>
+    <p>За это время многие ученые проводили над вашим телом различные эксперименты и модификации.</p>
+	<p>Внешне вы почти не изменились, но вот ваши гены изменили на столько, что вы теперь сверх человек.</p>
+    <p>Трудное начало. Вы не имеете своего владения. Доступны уникальные возможности.</p>
+    <input id="spoilers03" type="button" value="Закрыть" onclick=$("div[class^='spoiler_body']").hide('normal') >
+	
+	
+ </div>
+ 
+ 
+ 
+</body>
+
+</head>
+</html>
