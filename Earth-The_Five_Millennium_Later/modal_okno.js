@@ -10,7 +10,7 @@ function showA_panel_v_klass()
 //элемента "a"
 a_panel_v_klass.style.display = "block";
 a_panel_v_klass.style.top = "10px";
-a_panel_v_klass.style.left = "300px";
+a_panel_v_klass.style.left = "100px";
 }
 //Вызываем функцию "hideA", которая будет скрывать 
 //окно для элементов "a" и "b"
