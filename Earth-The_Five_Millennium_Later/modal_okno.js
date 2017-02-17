@@ -1,5 +1,4 @@
 ﻿
-
 //показываем окно функции "showA"
 function showA_panel_v_klass()
 {
@@ -10,7 +9,7 @@ function showA_panel_v_klass()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_panel_v_klass.style.display = "block";
-a_panel_v_klass.style.top = "10px";
+a_panel_v_klass.style.top = "100px";
 a_panel_v_klass.style.left = "100px";
 }
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -67,7 +66,7 @@ function showA_001()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_001.style.display = "block";
-a_001.style.top = "150px";
+a_001.style.top = "160px";
 a_001.style.left = "100px";
 }
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -87,7 +86,7 @@ function showA_002()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_002.style.display = "block";
-a_002.style.top = "150px";
+a_002.style.top = "160px";
 a_002.style.left = "100px";
 }
 //Вызываем функцию "hideA", которая будет скрывать 
@@ -108,7 +107,7 @@ function showA_003()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_003.style.display = "block";
-a_003.style.top = "150px";
+a_003.style.top = "160px";
 a_003.style.left = "100px";
 }
 
@@ -131,7 +130,7 @@ function showA_004()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_004.style.display = "block";
-a_004.style.top = "150px";
+a_004.style.top = "160px";
 a_004.style.left = "100px";
 }
 
@@ -154,7 +153,7 @@ function showA_005()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_005.style.display = "block";
-a_005.style.top = "150px";
+a_005.style.top = "160px";
 a_005.style.left = "100px";
 }
 
@@ -177,7 +176,7 @@ function showA_006()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_006.style.display = "block";
-a_006.style.top = "150px";
+a_006.style.top = "160px";
 a_006.style.left = "100px";
 }
 
@@ -200,7 +199,7 @@ function showA_007()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_007.style.display = "block";
-a_007.style.top = "150px";
+a_007.style.top = "160px";
 a_007.style.left = "100px";
 }
 
@@ -225,7 +224,7 @@ b_008.style.display = "block";
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_008.style.display = "block";
-a_008.style.top = "150px";
+a_008.style.top = "160px";
 a_008.style.left = "100px";
 }
 
@@ -247,7 +246,7 @@ function showA_009()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_009.style.display = "block";
-a_009.style.top = "150px";
+a_009.style.top = "160px";
 a_009.style.left = "100px";
 }
 
@@ -269,7 +268,7 @@ function showA_010()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_010.style.display = "block";
-a_010.style.top = "150px";
+a_010.style.top = "160px";
 a_010.style.left = "100px";
 }
 
@@ -282,6 +281,52 @@ a_010.style.display = "none";
 }
 
 
+//Модальное окно Область
+function showA_010_oblast()
+{
+//Задаем прозрачность и блокируем дисплей
+//элемента "b"
+
+// Задаем блокироваку и отступ сверху в 200px
+//элемента "a"
+a_010_oblast.style.display = "block";
+a_010_oblast.style.top = "160px";
+a_010_oblast.style.left = "100px";
+}
+
+//Вызываем функцию "hideA", которая будет скрывать 
+//окно для элементов "a" и "b"
+function hideA_010_oblast()
+{
+b_010_oblast.style.display = "none";
+a_010_oblast.style.display = "none";
+}
+
+
+//Модальное окно района
+function showA_010_raion()
+{
+//Задаем прозрачность и блокируем дисплей
+//элемента "b"
+
+// Задаем блокироваку и отступ сверху в 200px
+//элемента "a"
+a_010_raion.style.display = "block";
+a_010_raion.style.top = "160px";
+a_010_raion.style.left = "100px";
+}
+
+//Вызываем функцию "hideA", которая будет скрывать 
+//окно для элементов "a" и "b"
+function hideA_010_raion()
+{
+b_010_raion.style.display = "none";
+a_010_raion.style.display = "none";
+}
+
+
+
+
 
 //Модальное окно Лотерея
 function showA_011()
@@ -292,7 +337,7 @@ function showA_011()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_011.style.display = "block";
-a_011.style.top = "150px";
+a_011.style.top = "160px";
 a_011.style.left = "100px";
 }
 
@@ -315,7 +360,7 @@ function showA_god()
 // Задаем блокироваку и отступ сверху в 200px
 //элемента "a"
 a_god.style.display = "block";
-a_god.style.top = "150px";
+a_god.style.top = "160px";
 a_god.style.left = "100px";
 }
 
@@ -501,6 +546,8 @@ hideA_008();
 hideA_009();
 hideA_010();
 hideA_011();
+hideA_010_oblast();
+hideA_010_raion();
 hideA_osnova_panel();	
 }
 

@@ -68,6 +68,7 @@ else if (umeliy_voin<=250) {bonus_opit_slot = 100;}
 else if (umeliy_voin<=500) {bonus_opit_slot = 250;}
 else if (umeliy_voin>=1000)	{bonus_opit_slot = 500; opit_umeliy_voin = 1000;}	
 obnovlenie_stat();	
+document.getElementById('visual_bonus_opit_slot').innerHTML = bonus_opit_slot;
 }
 
 
@@ -126,7 +127,7 @@ function pluss_opit_hitryuga() {
 	var hitryuga; {hitryuga = 0;}
 	var opit_hitryuga; {opit_hitryuga = 1000;}
 	 //Бонус который добавляется к накапливанию опыта слотов
-	var bonus_aktiv_slot_navik; {bonus_aktiv_slot_navik = 0;}
+	var bonus_aktiv_slot_navik; {bonus_aktiv_slot_navik = 1;}
 function all_hitryuga() {	
 	if (opit_hitryuga<=1) {
 		hitryuga += 1;

@@ -45,23 +45,43 @@
 	
 </head>	
 
-<body onload="javascript:obnovlenie_stat()">
+<body onload="obnovlenie_stat()" >
  
 
+<div id="visual_opit_slot_orujie" style="display: none;" ></div>
+<div id="visual_opit_slot_obod" style="display: none;" ></div>
+<div id="visual_opit_slot_chit" style="display: none;" ></div>
+<div id="visual_opit_slot_odejda" style="display: none;" ></div>
+<div id="visual_opit_slot_ojerelie" style="display: none;" ></div>
+<div id="visual_opit_slot_levoe_kolso" style="display: none;" ></div>
+<div id="visual_opit_slot_pravoe_kolso" style="display: none;" ></div>
+<div id="visual_opit_slot_braslet_leviy" style="display: none;" ></div>
+<div id="visual_opit_slot_braslet_praviy" style="display: none;" ></div>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
     <button onClick="javascript:poluchenie_lvl_mob_0001()+poluchenie_lvl_god()+obnovlenie_stat()" >Получить +10 опыта</button>
 	
 	
 	
-	<button id="di_mob_0001" onClick="javascript:war_hp_mob_0001()+obnovlenie_stat()" >Ударить моба</button>
+	
 	<button id="di_mob_0001" onClick="javascript:raspred_ochkov_navika()" >Распределить очки</button>
 	
-	<button onClick="javascript:opit_god_oruzie()+opit_god_odejda()+opit_god_ojerelie()+opit_god_levoe_kolso()+opit_god_pravoe_kolso()+opit_god_levaya_noga()+opit_god_pravaya_noga()+obnovlenie_stat()" >Опыт снаряжения</button>
+	<button onClick="opit_god_oruzie()+obnovlenie_stat()" >Опыт снаряжения</button>
 	
 	
 	
 	
 	
-	<button onClick="javascript:obnovlenie_all()" >восстановить здоровье</button>
+	
 	
 	<button onClick="javascript:people_bonus_all_god_resurs_vip()" >Добавить Друга</button>
 	
@@ -82,7 +102,7 @@
 	
 	
 	
-<body onload="javascript:obnovlenie_stat()">
+
 	
 	<div id="visual_opit_umeliy" ></div>
 	
@@ -139,54 +159,68 @@
 	<a  href="#" onclick="showA_001()+exit_modal_heroes();" class="pages">Герой</a>
     <div id="a_001"><div id="windows_osnovnoe">
 	<!-- Можно внести данные в модальное окно -->
-	<p id="visual_stats_heroes">Статы Героя</p>
+	
 	<p id="visual_lvl_god_1"></p>
-	<!-- Визуализация слота оружие -->
-	<p id="slot_orujie" ><img src="slot.bmp" ></p>
-	<p id="slot_mech_siluet" ><img src="mech_siluet.jpg" ></p>
-	
-	
-	
-	
-	
-	
+
 	<p id="visual_god_hp"></p>
 	<p id="visual_god_bron"></p>
 	<p id="visual_god_uron"></p>
 	<p id="visual_god_mana"></p>
 	<p id="visual_god_n_mana"></p>
 	<p id="visual_god_jar_uron"></p>
+	<p id="visual_god_vnimanie"></p>
 	<p id="visual_god_udacha"></p>
+	<!-- Визуализация бара опыта героя -->
 	<p class="wrapper_opit_level_heroes"></p>
 	<p id="bar_opit_level_heroes" style="cursor: pointer;" ><img id="polosa_opit_level_heroes" src="progres_bar_level.bmp" ><p id="visual_opit_god_1"></p></p>
+	<!-- Визуализация слота Оружие -->
+	<p id="slot_orujie" ><img src="slot.bmp" ></p>
+	<p id="slot_mech_siluet" ><img src="mech_siluet.jpg" ></p>
 	<p class="wrapper_opit_slot_orujie"></p>
 	<p id="bar_opit_slot_orujie" style="cursor: pointer;" ><img id="polosa_opit_slot_orujie" src="progres_bar_slot.bmp"><p id="visual_item_god_oruzie"></p><p id="visual_level_god_oruzie"></p></p>
-	<!-- Визуализация слота одежды -->
-	<p id="slot_odejda" ><img src="slot.bmp" ></p>
-	<p id="slot_odejda_siluet" ><img src="odejda_siluet.jpg" ></p>
-	<p class="wrapper_opit_slot_odejda"></p>
-	<p id="bar_opit_slot_odejda" style="cursor: pointer;" ><img id="polosa_opit_slot_odejda" src="progres_bar_slot.bmp"><p id="visual_item_god_odejda"></p><p id="visual_level_god_odejda"></p></p>
+	<!-- Визуализация слота Обод -->
+	<p id="slot_obod" ><img src="slot.bmp" ></p>
+	<p id="slot_obod_siluet" ><img src="obod_siluet.jpg" ></p>
+	<p class="wrapper_opit_slot_obod"></p>
+	<p id="bar_opit_slot_obod" style="cursor: pointer;" ><img id="polosa_opit_slot_obod" src="progres_bar_slot.bmp"><p id="visual_item_god_obod"></p><p id="visual_level_god_obod"></p></p>
+	<!-- Визуализация слота Шит -->
+	<p id="slot_chit" ><img src="slot.bmp" ></p>
+	<p id="slot_chit_siluet" ><img src="mech_siluet.jpg" ></p>
+	<p class="wrapper_opit_slot_chit"></p>
+	<p id="bar_opit_slot_chit" style="cursor: pointer;" ><img id="polosa_opit_slot_chit" src="progres_bar_slot.bmp"><p id="visual_item_god_chit"></p><p id="visual_level_god_chit"></p></p>
+	<!-- Визуализация слота левое кольцо -->
+	<p id="slot_levoe_kolso" ><img src="slot.bmp" ></p>
+	<p id="slot_levoe_kolso_siluet" ><img src="kolso_siluet.jpg" ></p>
+	<p class="wrapper_opit_slot_levoe_kolso"></p>
+	<p id="bar_opit_slot_levoe_kolso" style="cursor: pointer;" ><img id="polosa_opit_slot_levoe_kolso" src="progres_bar_slot.bmp"><p id="visual_item_god_levoe_kolso"></p><p id="visual_level_god_levoe_kolso"></p></p>
 	<!-- Визуализация слота ожерелья -->
 	<p id="slot_ojerelie" ><img src="slot.bmp" ></p>
 	<p id="slot_ojerelie_siluet" ><img src="ojerelie_siluet.jpg" ></p>
 	<p class="wrapper_opit_slot_ojerelie"></p>
 	<p id="bar_opit_slot_ojerelie" style="cursor: pointer;" ><img id="polosa_opit_slot_ojerelie" src="progres_bar_slot.bmp"><p id="visual_item_god_ojerelie"></p><p id="visual_level_god_ojerelie"></p></p>
-	<!-- Визуализация слота левое кольцо -->
-	<p id="slot_levoe_kolso" ><img src="slot.bmp" ></p>
-	<p id="slot_levoe_kolso_siluet" ><img src="odejda_siluet.jpg" ></p>
-	<p class="wrapper_opit_slot_levoe_kolso"></p>
-	<p id="bar_opit_slot_levoe_kolso" style="cursor: pointer;" ><img id="polosa_opit_slot_levoe_kolso" src="progres_bar_slot.bmp"><p id="visual_item_god_levoe_kolso"></p><p id="visual_level_god_levoe_kolso"></p></p>
 	<!-- Визуализация слота правое кольцо -->
 	<p id="slot_pravoe_kolso" ><img src="slot.bmp" ></p>
-	<p id="slot_pravoe_kolso_siluet" ><img src="odejda_siluet.jpg" ></p>
+	<p id="slot_pravoe_kolso_siluet" ><img src="kolso_siluet.jpg" ></p>
 	<p class="wrapper_opit_slot_pravoe_kolso"></p>
 	<p id="bar_opit_slot_pravoe_kolso" style="cursor: pointer;" ><img id="polosa_opit_slot_pravoe_kolso" src="progres_bar_slot.bmp"><p id="visual_item_god_pravoe_kolso"></p><p id="visual_level_god_pravoe_kolso"></p></p>
+	<!-- Визуализация слота Левого Браслета -->
+	<p id="slot_braslet_leviy" ><img src="slot.bmp" ></p>
+	<p id="slot_braslet_leviy_siluet" ><img src="braslet.jpg" ></p>
+	<p class="wrapper_opit_slot_braslet_leviy"></p>
+	<p id="bar_opit_slot_braslet_leviy" style="cursor: pointer;" ><img id="polosa_opit_slot_braslet_leviy" src="progres_bar_slot.bmp"><p id="visual_item_god_braslet_leviy"></p><p id="visual_level_god_braslet_leviy"></p></p>
+	<!-- Визуализация слота одежды -->
+	<p id="slot_odejda" ><img src="slot.bmp" ></p>
+	<p id="slot_odejda_siluet" ><img src="odejda_siluet.jpg" ></p>
+	<p class="wrapper_opit_slot_odejda"></p>
+	<p id="bar_opit_slot_odejda" style="cursor: pointer;" ><img id="polosa_opit_slot_odejda" src="progres_bar_slot.bmp"><p id="visual_item_god_odejda"></p><p id="visual_level_god_odejda"></p></p>
+	<!-- Визуализация слота Левого Браслета -->
+	<p id="slot_braslet_praviy" ><img src="slot.bmp" ></p>
+	<p id="slot_braslet_praviy_siluet" ><img src="braslet.jpg" ></p>
+	<p class="wrapper_opit_slot_braslet_praviy"></p>
+	<p id="bar_opit_slot_braslet_praviy" style="cursor: pointer;" ><img id="polosa_opit_slot_braslet_praviy" src="progres_bar_slot.bmp"><p id="visual_item_god_braslet_praviy"></p><p id="visual_level_god_braslet_praviy"></p></p>
 	
 	
-	
-	
-	
-	
+
 	<button id="visual_poluchenie_opit" style="cursor: pointer;" onClick="javascript:poluchenie_lvl_mob_clik()+poluchenie_lvl_god()+obnovlenie_stat()" >Получить +100 опыта</button>
     <!-- Окончание внесения данных -->
     </div></div>
@@ -318,10 +352,59 @@
 	<!-- Модальное окно Карта Мира -->
 	<a href="#" onclick="showA_010()+exit_modal_all_map();" class="pages"> Карта Мира</a>
     <div id="a_010"><div id="all_world_terras">
-    <!-- Можно внести данные в модальное окно -->
-	<p id="visual_all_terras" >Карта Мира</p>
 	
-    <!-- Окончание внесения данных -->
+	
+
+	
+	
+	
+	
+    <!-- Можно внести данные в модальное окно -->
+	<div type="button" id="visual_mir_local_nachalnaya_locasiya" onClick="showA_010_oblast()" class="pages" ></div>
+	
+	<!-- Модальное окно области -->
+	
+    <div id="a_010_oblast"><div id="all_world_terras">
+    <!-- Можно внести данные в модальное окно -->
+	
+	
+	
+	
+	
+	
+	<div type="button" id="visual_oblast_local_nachalnaya_locasiya" onClick="showA_010_raion()" class="pages" ></div>
+	<!-- Модальное окно Района -->
+	<div id="a_010_raion"><div id="all_world_terras">
+	
+	
+	
+	
+	
+	 <!-- Окончание внесения данных района -->
+	<a href="#" onclick="hideA_010_raion();"  style="float: right;">Х</a>
+	</div></div>
+    <div id="b_010_raion"></div>
+	
+	
+	
+ 
+	
+	
+	
+	
+	
+	
+	
+    <!-- Окончание внесения данных Области -->
+    <a href="#" onclick="hideA_010_oblast();"  
+    style="float: right;">Х</a>
+    </div></div>
+    <div id="b_010_oblast"></div>
+	
+	
+	
+	
+    <!-- Окончание внесения данных Карты Мира -->
    
     </div></div>
     <div id="b_010"></div>

@@ -36,10 +36,18 @@
 	   
 	   }
 	   
-	   
-	   
+html {
+background: url(nebo_002.jpg);	  
+
+-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;	  
+}
   
-         
+         #visual_mir_local_nachalnaya_locasiya {position: absolute; top: 300; left: 400;}
+		 #visual_oblast_local_nachalnaya_locasiya {position: absolute; top: 300; left: 400;}
+		 #visual_raion_local_nachalnaya_locasiya {position: absolute; top: 300; left: 400;}
 		  
 		  #visual_lvl_god_1 {position: absolute; top: 30; left: 30;}
 		  
@@ -49,9 +57,10 @@
 		  #visual_god_mana {position: absolute; top: 130; left: 30;}	
 		  #visual_god_n_mana {position: absolute; top: 150; left: 30;}	
 		  #visual_god_jar_uron {position: absolute; top: 170; left: 30;}
-          #visual_god_udacha   {position: absolute; top: 190; left: 30;}
-          #visual_people_bonus_all_god_resurs_vip  {position: absolute; top: 210; left: 30;}		  
-		  #visual_poluchenie_opit  {position: absolute; top: 230; left: 30;}	
+		  #visual_god_vnimanie {position: absolute; top: 190; left: 30;}
+          #visual_god_udacha  {position: absolute; top: 210; left: 30;}
+          #visual_people_bonus_all_god_resurs_vip  {position: absolute; top: 230; left: 30;}		  
+		  #visual_poluchenie_opit  {position: absolute; top: 250; left: 30;}	
 		  
 		  
 		  #visual_os_god_opit_lvl_vip {position: absolute; top: 80; left: 30;}
@@ -65,7 +74,7 @@
 		    #visual_navik_heroes {position: absolute; top: 30; left: 400;}
 			
 			
-			#visual_all_terras {position: absolute; top: 30; left: 400; color: #FFFFFF;}
+			#visual_all_terras {position: absolute; top: 30; left: 100; color: #FFFFFF;}
 	        .visual_all_terras {color: #FFFFFF;}
 			
 	         
@@ -86,120 +95,137 @@
 	#visual_god_random {position: absolute; top: 300; left: 390;}
 	
 			 
-		
 
-
-	#slot_orujie {position: absolute; top: 455; left: 0; border: 2px solid blue;}
-	#slot_mech_siluet {position: absolute; top: 457; left: 6;}		 
+	#slot_orujie {position: absolute; top: 10; left: 500; border: 3px solid blue;}
+	#slot_mech_siluet {position: absolute; top: 18; left: 510;}		 
 	.wrapper_opit_slot_orujie {margin: 20px;}
 	#bar_opit_slot_orujie {
-	    position: absolute; top: 558px; left: 0px;
+	    position: absolute; top: 115px; left: 500px;
 		width: 100px;
 		height: 10px;
-		border: 2px solid #1B1DB6;
+		border: 3px solid #1B1DB6;
 		}
 	#polosa_opit_slot_orujie {height: 10px;}	
-	#visual_level_god_oruzie {position: absolute; top: 565; left: 5; font-size: 10px;}
-	#visual_item_god_oruzie {position: absolute; top: 565; left: 60; font-size: 10px;}
+	#visual_level_god_oruzie {position: absolute; top: 123; left: 510; font-size: 10px;}
+	#visual_item_god_oruzie {position: absolute; top: 123; left: 570; font-size: 10px;}
 
 	
-	
-	#slot_odejda {position: absolute; top: 455; left: 100; border: 2px solid blue;}
-	#slot_odejda_siluet {position: absolute; top: 457; left: 106;}	
-    .wrapper_opit_slot_odejda {margin: 20px;}
-	#bar_opit_slot_odejda {
-	    position: absolute; top: 558px; left: 100px;
+	#slot_obod {position: absolute; top: 10; left: 603; border: 3px solid blue;}
+	#slot_obod_siluet {position: absolute; top: 18; left: 609;}		 
+	.wrapper_opit_slot_obod {margin: 20px;}
+	#bar_opit_slot_obod {
+	    position: absolute; top: 115px; left: 603px;
 		width: 100px;
 		height: 10px;
-		border: 2px solid #1B1DB6;
+		border: 3px solid #1B1DB6;
 		}
-	#polosa_opit_slot_odejda {height: 10px;}	
-	#visual_level_god_odejda {position: absolute; top: 565; left: 105; font-size: 10px;}
-	#visual_item_god_odejda {position: absolute; top: 565; left: 160; font-size: 10px;}
+	#polosa_opit_slot_obod {height: 10px;}	
+	#visual_level_god_obod {position: absolute; top: 123; left: 613; font-size: 10px;}
+	#visual_item_god_obod {position: absolute; top: 123; left: 667; font-size: 10px;}
 	
 	
-
-	#slot_ojerelie {position: absolute; top: 455; left: 200; border: 2px solid blue;}
-	#slot_ojerelie_siluet {position: absolute; top: 458; left: 218;}	
-	.wrapper_opit_slot_ojerelie {margin: 20px;}
-	#bar_opit_slot_ojerelie {
-	    position: absolute; top: 558px; left: 200px;
+	#slot_chit {position: absolute; top: 10; left: 706; border: 3px solid blue;}
+	#slot_chit_siluet {position: absolute; top: 18; left: 712;}		 
+	.wrapper_opit_slot_chit {margin: 20px;}
+	#bar_opit_slot_chit {
+	    position: absolute; top: 115px; left: 706px;
 		width: 100px;
 		height: 10px;
-		border: 2px solid #1B1DB6;
+		border: 3px solid #1B1DB6;
 		}
-	#polosa_opit_slot_ojerelie {height: 10px;}
-    #visual_level_god_ojerelie {position: absolute; top: 565; left: 205; font-size: 10px;}
-	#visual_item_god_ojerelie {position: absolute; top: 565; left: 260; font-size: 10px;}
-
-
-	#slot_levoe_kolso {position: absolute; top: 455; left: 300; border: 2px solid blue;}
-	#slot_levoe_kolso_siluet {position: absolute; top: 458; left: 306;}	
+	#polosa_opit_slot_chit {height: 10px;}	
+	#visual_level_god_chit {position: absolute; top: 123; left: 717; font-size: 10px;}
+	#visual_item_god_chit {position: absolute; top: 123; left: 777; font-size: 10px;}
+	
+	#slot_levoe_kolso {position: absolute; top: 130; left: 500; border: 3px solid blue;}
+	#slot_levoe_kolso_siluet {position: absolute; top: 135; left: 505;}	
 	.wrapper_opit_slot_levoe_kolso {margin: 20px;}
 	#bar_opit_slot_levoe_kolso {
-	    position: absolute; top: 558px; left: 300px;
+	    position: absolute; top: 230px; left: 500px;
 		width: 100px;
 		height: 10px;
-		border: 2px solid #1B1DB6;
+		border: 3px solid #1B1DB6;
 		}
 	#polosa_opit_slot_levoe_kolso {height: 10px;}
-    #visual_level_god_levoe_kolso {position: absolute; top: 565; left: 305; font-size: 10px;}
-	#visual_item_god_levoe_kolso {position: absolute; top: 565; left: 360; font-size: 10px;}
+    #visual_level_god_levoe_kolso {position: absolute; top: 238; left: 510; font-size: 10px;}
+	#visual_item_god_levoe_kolso {position: absolute; top: 238; left: 570; font-size: 10px;}
 
-
-
-	#slot_pravoe_kolso {position: absolute; top: 455; left: 400; border: 2px solid blue;}
-	#slot_pravoe_kolso_siluet {position: absolute; top: 458; left: 406;}	
+	#slot_ojerelie {position: absolute; top: 130; left: 603; border: 3px solid blue;}
+	#slot_ojerelie_siluet {position: absolute; top: 135; left: 609;}	
+	.wrapper_opit_slot_ojerelie {margin: 20px;}
+	#bar_opit_slot_ojerelie {
+	    position: absolute; top: 230px; left: 603px;
+		width: 100px;
+		height: 10px;
+		border: 3px solid #1B1DB6;
+		}
+	#polosa_opit_slot_ojerelie {height: 10px;}
+    #visual_level_god_ojerelie {position: absolute; top: 238; left: 613; font-size: 10px;}
+	#visual_item_god_ojerelie {position: absolute; top: 238; left: 667; font-size: 10px;}
+	
+	#slot_pravoe_kolso {position: absolute; top: 130; left: 706; border: 3px solid blue;}
+	#slot_pravoe_kolso_siluet {position: absolute; top: 135; left: 712;}	
 	.wrapper_opit_slot_pravoe_kolso {margin: 20px;}
 	#bar_opit_slot_pravoe_kolso {
-	    position: absolute; top: 558px; left: 400px;
+	    position: absolute; top: 230px; left: 706px;
 		width: 100px;
 		height: 10px;
-		border: 2px solid #1B1DB6;
+		border: 3px solid #1B1DB6;
 		}
 	#polosa_opit_slot_pravoe_kolso {height: 10px;}
-    #visual_level_god_pravoe_kolso {position: absolute; top: 565; left: 405; font-size: 10px;}
-	#visual_item_god_pravoe_kolso {position: absolute; top: 565; left: 460; font-size: 10px;}
-
-
-
+    #visual_level_god_pravoe_kolso {position: absolute; top: 238; left: 716; font-size: 10px;}
+	#visual_item_god_pravoe_kolso {position: absolute; top: 238; left: 776; font-size: 10px;}
 
 	
-	
-	.wrapper_opit_slot_levaya_noga {margin: 20px;}
-	#bar_opit_slot_levaya_noga {
-	    position: absolute; top: 558px; left: 500px;
+	#slot_braslet_leviy {position: absolute; top: 244; left: 500; border: 3px solid blue;}
+	#slot_braslet_leviy_siluet {position: absolute; top: 249; left: 505;}	
+	.wrapper_opit_slot_braslet_leviy {margin: 20px;}
+	#bar_opit_slot_braslet_leviy {
+	    position: absolute; top: 349px; left: 500px;
 		width: 100px;
 		height: 10px;
-		border: 2px solid #1B1DB6;
+		border: 3px solid #1B1DB6;
 		}
-	#polosa_opit_slot_levaya_noga {height: 10px;}	
+	#polosa_opit_slot_braslet_leviy {height: 10px;}	
+	#visual_level_god_braslet_leviy {position: absolute; top: 358; left: 510; font-size: 10px;}
+	#visual_item_god_braslet_leviy {position: absolute; top: 358; left: 570; font-size: 10px;}
 	
-	.wrapper_opit_slot_pravaya_noga {margin: 20px;}
-	#bar_opit_slot_pravaya_noga {
-	    position: absolute; top: 558px; left: 600px;
+	
+	#slot_odejda {position: absolute; top: 244; left: 603; border: 3px solid blue;}
+	#slot_odejda_siluet {position: absolute; top: 249; left: 609;}	
+    .wrapper_opit_slot_odejda {margin: 20px;}
+	#bar_opit_slot_odejda {
+	    position: absolute; top: 349px; left: 603px;
 		width: 100px;
 		height: 10px;
-		border: 2px solid #1B1DB6;
+		border: 3px solid #1B1DB6;
 		}
-	#polosa_opit_slot_pravaya_noga {height: 10px;}	
-
-
-
-
-
-
-
-
-
+	#polosa_opit_slot_odejda {height: 10px;}	
+	#visual_level_god_odejda {position: absolute; top: 358; left: 613; font-size: 10px;}
+	#visual_item_god_odejda {position: absolute; top: 358; left: 673; font-size: 10px;}
 	
-			 
+
+	#slot_braslet_praviy {position: absolute; top: 244; left: 706; border: 3px solid blue;}
+	#slot_braslet_praviy_siluet {position: absolute; top: 249; left: 712;}	
+	.wrapper_opit_slot_braslet_praviy {margin: 20px;}
+	#bar_opit_slot_braslet_praviy {
+	    position: absolute; top: 349px; left: 706px;
+		width: 100px;
+		height: 10px;
+		border: 3px solid #1B1DB6;
+		}
+	#polosa_opit_slot_braslet_praviy {height: 10px;}	
+    #visual_level_god_braslet_praviy {position: absolute; top: 358; left: 716; font-size: 10px;}
+	#visual_item_god_braslet_praviy {position: absolute; top: 358; left: 776; font-size: 10px;}
+
+
+		 
 	.wrapper_opit_level_heroes {margin: 20px;}		 
 	#bar_opit_level_heroes {
-		position: absolute; top: 570px; left: 2px;
+		position: absolute; top: 570px; left: 3px;
 		width: 800px;
 		height: 20px;
-		border: 5px solid #1B1DB6;	
+		border: 6px solid #1B1DB6;	
 	}		 
 	#visual_opit_god_1 {position: absolute; top: 576; left: 390;}		 
 	#polosa_opit_level_heroes {height: 20px;}			 
@@ -241,8 +267,12 @@
 width: 800px;
 height: 40px;
 padding: 5px;
-border: 2px solid blue;
-background: green;
+border: 5px solid blue;
+background: url(nebo_002.jpg);
+-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 	
 		
 }
@@ -352,7 +382,7 @@ text-decoration: none;
 width: 800px;
 height: 50px;
 padding: 5px;
-border: 2px solid blue;
+border: 5px solid blue;
 background: url(nebo_002.jpg);
 -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -415,7 +445,7 @@ text-decoration: none;
 width: 800px;
 height: 600px;
 padding: 5px;
-border: 2px solid blue;
+border: 5px solid blue;
 background: url(nebo_002.jpg);
 -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -678,7 +708,7 @@ text-decoration: none;
 width: 800px;
 height: 600px;
 padding: 5px;
-border: 2px solid blue;
+border: 5px solid blue;
 background: url(bitva_nad_terras.jpg);
 -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -771,8 +801,8 @@ text-decoration: none;
 width: 800px;
 height: 600px;
 padding: 5px;
-border: 2px solid blue;
-background: url(isledovanie_terras.jpg);
+border: 5px solid blue;
+
 	
 		
 }		
@@ -813,6 +843,86 @@ text-decoration: none;
 		
 		
 
+			
+#b_010_oblast {
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+display:none;
+background: grey;
+z-index:11;
+}
+#a_010_oblast {
+border:1px solid black;
+position:fixed;
+background: #eff7ff;
+z-index:13;
+display:none;
+}
+a_010_oblast.pages
+{
+background: #97cdff;
+color: white;
+padding: 4px;
+text-decoration: none;
+}
+a_010_oblast:hover.pages
+{
+background: red;
+color: white;
+padding: 4px;
+text-decoration: none;
+}		
+		
+		
+#b_010_raion {
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+display:none;
+background: grey;
+z-index:12;
+}
+#a_010_raion {
+border:1px solid black;
+position:fixed;
+background: #eff7ff;
+z-index:14;
+display:none;
+}
+a_010_raion.pages
+{
+background: #97cdff;
+color: white;
+padding: 4px;
+text-decoration: none;
+}
+a_010_raion:hover.pages
+{
+background: red;
+color: white;
+padding: 4px;
+text-decoration: none;
+}				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 
 

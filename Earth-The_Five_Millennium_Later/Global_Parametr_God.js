@@ -2,39 +2,41 @@
 	
 	
 	//Здоровье 
-	 var hp; {hp = 0;} 
+	 
 	 //любая прибавка к жизням на постоянную идет в это значение god_hp;
-	 var god_hp; {hp = god_hp = 0;} 
+	 var god_hp; {god_hp = 0;} 
 	 //обращаясь к этому значению мы можем временно добавлять параметры
-	 var all_god_hp; {hp = god_hp = all_god_hp = 100000;}
+	 var all_god_hp; {god_hp = all_god_hp = 100;}
 	 //Броня
-     var bron; {bron = 0;}	 
-	 var god_bron; {bron = god_bron = 0;}
-	 var all_god_bron; {bron = god_bron = all_god_bron = 10;}
+     	 
+	 var god_bron; {god_bron = 0;}
+	 var all_god_bron; {god_bron = all_god_bron = 10;}
 	 //Урон 
-	 var uron; {uron = 0;}
-	 var god_uron; {uron = god_uron = 0;}
-	 var all_god_uron; {uron = god_uron = all_god_uron = 1;} 
+	 
+	 var god_uron; {god_uron = 0;}
+	 var all_god_uron; {god_uron = all_god_uron = 10;} 
 	 //Мана 
-	 var mana; {mana = 0;}
-	 var god_mana; {mana = god_mana = 0;}
-	 var all_god_mana; {mana = god_mana = all_god_mana = 20;}
+	 
+	 var god_mana; {god_mana = 0;}
+	 var all_god_mana; {god_mana = all_god_mana = 20;}
 	 //Начальная Мана
-	 var n_mana; {n_mana = 0;}
-	 var god_n_mana; {n_mana = god_n_mana = 0;}
-	 var minus_god_n_mana; {n_mana = god_n_mana = minus_god_n_mana = 0;}
+	 
+	 var god_n_mana; {god_n_mana = 0;}
+	 var minus_god_n_mana; {god_n_mana = minus_god_n_mana = 0;}
 	
 	 //Ярость 
-	 var jar_uron; {jar_uron = 0;}
-	 var god_jar_uron; {jar_uron = god_jar_uron = 0;}
-	 var all_god_jar_uron; {jar_uron = god_jar_uron = all_god_jar_uron = 0;}
+	 var god_jar_uron; {god_jar_uron = 0;}
+	 var all_god_jar_uron; {god_jar_uron = all_god_jar_uron = 0;}
 	 //блок
 	 var god_blok; {god_blok = 0;}
 	 var all_god_blok; {god_blok = all_god_blok = 0;}
+	 
+	 var god_vnimanie; {god_vnimanie = 0;}
+	 var all_god_vnimanie; {god_vnimanie = all_god_vnimanie = 0;}
+	 
 	 //удача
-	 var udacha; {udacha = 0;}
-	 var god_udacha; {udacha = god_udacha = 0;}
-	 var all_god_udacha; {udacha = god_udacha = all_god_udacha = 0;}
+	 var god_udacha; {god_udacha = 0;}
+	 var all_god_udacha; {god_udacha = all_god_udacha = 0;}
 	 
 	 //Опыт получаемый навыками
 	 var opit_navik; {opit_navik = 0;}
@@ -128,6 +130,7 @@
 	document.getElementById('visual_god_mana').innerHTML = 'Мана:  ' + god_mana;
 	document.getElementById('visual_god_n_mana').innerHTML = 'Начальная Мана:  ' + god_n_mana;
 	document.getElementById('visual_god_jar_uron').innerHTML = 'Ярость:  ' + god_jar_uron;
+	document.getElementById('visual_god_vnimanie').innerHTML = 'Внимательность:  ' + god_vnimanie;
 	document.getElementById('visual_god_udacha').innerHTML = 'Удача:  ' + god_udacha;
 	
 	//для визуализации статов моба
@@ -138,15 +141,13 @@
 	
 	
 	
+	document.getElementById('visual_mir_local_nachalnaya_locasiya').innerHTML = '<img src="raion_01.png"></img> ';
+	document.getElementById('visual_oblast_local_nachalnaya_locasiya').innerHTML = '<img src="raion_01.png"></img> ';
 	
 	
-    document.getElementById('visual_item_god_oruzie').innerHTML = opit_god_oruzie_01;
-	document.getElementById('visual_item_god_odejda').innerHTML = opit_god_odejda_01;
-	document.getElementById('visual_item_god_ojerelie').innerHTML = opit_god_ojerelie_01;
-	document.getElementById('visual_item_god_levoe_kolso').innerHTML = opit_god_levoe_kolso_01;
-	document.getElementById('visual_item_god_pravoe_kolso').innerHTML = opit_god_pravoe_kolso_01;
-	document.getElementById('visual_item_god_levaya_noga').innerHTML = opit_god_levaya_noga_01;
-	document.getElementById('visual_item_god_pravaya_noga').innerHTML = opit_god_pravaya_noga_01;
+	
+	
+    
 	document.getElementById('visual_all_god_hp').innerHTML = 'Здоровье:  ' + all_god_hp;
 	
 	
@@ -168,22 +169,55 @@
 	document.getElementById('visual_god_pitomes_suchnost').innerHTML = 'Сущности Питомцев:  ' + god_pitomes_suchnost;
 	document.getElementById('visual_god_relikvii_suchnost').innerHTML = 'Сущности Реликвий:  ' + god_relikvii_suchnost;
 	document.getElementById('visual_god_zveznaya_kroshka').innerHTML = 'Звездная Крошка:  ' + god_zveznaya_kroshka;
-	//Визуализация слотов и других стат этих слотов
+	//Визуализация уровня слотов
 	document.getElementById('visual_level_god_oruzie').innerHTML = 'Уровень:  ' + level_god_oruzie;
-	document.getElementById('visual_level_god_odejda').innerHTML = 'Уровень:  ' + level_god_odejda;
-	document.getElementById('visual_level_god_ojerelie').innerHTML = 'Уровень:  ' + level_god_ojerelie;
+	document.getElementById('visual_level_god_obod').innerHTML = 'Уровень:  ' + level_god_obod;
+	document.getElementById('visual_level_god_chit').innerHTML = 'Уровень:  ' + level_god_chit;
 	document.getElementById('visual_level_god_levoe_kolso').innerHTML = 'Уровень:  ' + level_god_levoe_kolso;
+	document.getElementById('visual_level_god_ojerelie').innerHTML = 'Уровень:  ' + level_god_ojerelie;
 	document.getElementById('visual_level_god_pravoe_kolso').innerHTML = 'Уровень:  ' + level_god_pravoe_kolso;
+	document.getElementById('visual_level_god_braslet_leviy').innerHTML = 'Уровень:  ' + level_god_braslet_leviy;
+	document.getElementById('visual_level_god_odejda').innerHTML = 'Уровень:  ' + level_god_odejda;
+	document.getElementById('visual_level_god_braslet_praviy').innerHTML = 'Уровень:  ' + level_god_braslet_praviy;
+    //Визуализация опыта слотов
+	document.getElementById('visual_item_god_oruzie').innerHTML = opit_god_oruzie_01;
+	document.getElementById('visual_item_god_obod').innerHTML = opit_god_obod_01;
+	document.getElementById('visual_item_god_chit').innerHTML = opit_god_chit_01;
+	document.getElementById('visual_item_god_levoe_kolso').innerHTML = opit_god_levoe_kolso_01;
+	document.getElementById('visual_item_god_ojerelie').innerHTML = opit_god_ojerelie_01;
+	document.getElementById('visual_item_god_pravoe_kolso').innerHTML = opit_god_pravoe_kolso_01;
+	document.getElementById('visual_item_god_braslet_leviy').innerHTML = opit_god_braslet_leviy_01;
+    document.getElementById('visual_item_god_odejda').innerHTML = opit_god_odejda_01;
+    document.getElementById('visual_item_god_braslet_praviy').innerHTML = opit_god_braslet_praviy_01;
 	
+	
+	
+
+
+document.getElementById('visual_opit_slot_orujie').innerHTML = opit_slot_orujie;
+document.getElementById('visual_opit_slot_obod').innerHTML = opit_slot_obod;
+document.getElementById('visual_opit_slot_chit').innerHTML = opit_slot_chit;
+document.getElementById('visual_opit_slot_odejda').innerHTML = opit_slot_odejda;	
+document.getElementById('visual_opit_slot_ojerelie').innerHTML = opit_slot_ojerelie;
+document.getElementById('visual_opit_slot_levoe_kolso').innerHTML = opit_slot_levoe_kolso;
+document.getElementById('visual_opit_slot_pravoe_kolso').innerHTML = opit_slot_pravoe_kolso;
+document.getElementById('visual_opit_slot_braslet_leviy').innerHTML = opit_slot_braslet_leviy;
+document.getElementById('visual_opit_slot_braslet_praviy').innerHTML = opit_slot_braslet_praviy;
+
+	
+	
+	
+	
+	//Визуализация Навыков
 	document.getElementById('visual_umeliy_voin').innerHTML = 'Навык Умелый Воин:   ' + umeliy_voin;
 	document.getElementById('visual_opit_umeliy_voin').innerHTML = 'Навык Умелый Воин:   ' + opit_umeliy_voin;
 	
-	document.getElementById('visual_bonus_opit_slot').innerHTML = 'Бонус Умелый Воин:   ' + bonus_opit_slot;
+	document.getElementById('visual_bonus_opit_slot').innerHTML = bonus_opit_slot;
 	
 	document.getElementById('visual_navik_slot').innerHTML = 'Навык Слот:   ' + navik_slot_umeliy_voin;
 	
 	
-	
+	 
 	
 	
 	} 
