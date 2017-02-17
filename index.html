@@ -4,10 +4,16 @@
     <META name="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="cache-control" content="public"/>
 
-	<title>My_games</title>
 
-
+    <link rel="stylesheet" href="Stili_God_Games.css" type="text/css" />
+    <script type="text/javascript" src="jquery-2.2.1.js" ></script>	
+	<script type="text/javascript" src="Funcsional_Game.js"></script>
+	<script type="text/javascript" src="modal_okno.js"></script>
+	<script src="http://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
 	
+	
+	<title>The Earth 5000 of years later</title>
+
 
 <style>
  
@@ -18,10 +24,57 @@
 </head>
 <body>
 
-<a href="Earth-The_Five_Millennium_Later/index.html">Earth-The_Five_Millennium_Later</a>
+<!-- Модальное окно панели -->
+	<button onclick="showA_panel_v_klass();" class="pages">Выбрать Героя</button>
+    <div id="a_panel_v_klass"><div id="all_panel_v_klass">
+    <!-- Можно внести данные в модальное окно -->
+	
+	<a href="#" onclick="showA_god();" class="pages">Бог</a>
+    <div id="a_god"><div id="windows_osnovnoe">
+    <!-- Можно внести данные в модальное окно -->
+	<p id="visual_god_ok">Бог</p>
+	<button id="God_New_Game" name="send" onclick="location.href='God_Way.html'" >Новая Игра</button>
+    <!-- Окончание внесения данных -->
+    <a href="#" onclick="hideA_god();" class="pages" 
+    style="float: right;">Х</a>
+    </div></div>
+    <div id="b_god"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <!-- Окончание внесения данных -->
+    <a href="#" onclick="hideA_panel_v_klass();" class="pages" 
+    style="float: right;">Х</a>
+    </div></div>
+    <div id="b_panel_v_klass"></div>
 
 
 
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+      
  
 </body>
 </html>

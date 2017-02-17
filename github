@@ -1,0 +1,6 @@
+﻿git config --global user.name "Sergey Larichev"
+git config --global user.email "SergioFlash@ya.ru"
+
+
+//для обновления файлов на сервере
+git push -u origin master
