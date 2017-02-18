@@ -2,12 +2,12 @@
 
  var bron_mob; {bron_mob = 0;}
  var blok_mob; {blok_mob = 0;}
- var mob_uron_0001; {mob_uron_0001 = 10;}
+ var mob_uron_0001; {mob_uron_0001 = 50;}
  var jar_mob; {jar_mob = 0;}
  
 
  var hp_mob_0001; {hp_mob_0001 = 0;}
- var all_hp_mob; {hp_mob_0001 = all_hp_mob = 100;}
+ var all_hp_mob; {hp_mob_0001 = all_hp_mob = 1000;}
   
   //урон от мобов
   
@@ -21,17 +21,13 @@
    //Опыт Молодого бога
 	 var opit_mob; {opit_mob = 0;}
 	 var all_opit_mob; {opit_mob = all_opit_mob = 20;}
+ 
+ var xod_mob; {xod_mob = 0;}
   
   
   
   
-  
-  function raspred_ochkov_navika() {
-	    opit_umeliy = 4;
-		pluss_opit_umeliy_voin();
-	  
-	  
-  }
+
   
   
  
@@ -51,32 +47,19 @@ function hp_obnov_mob() {
   
   // обычная атака по мобу
   function war_hp_mob_0001() {
-		  
-		
+		 
+		xod_mob +=1;
+		document.getElementById('visual_xod_mob').innerHTML = 'Ход: ' + xod_mob; 
+		 
+		if (xod_mob == 1) {all_god_hp = god_hp+item_hp+heroes_stats_hp;}
 	
 	    //если Жизни равны 0
-	    if (hp_mob_0001 == 0) {
-		hp_mob_0001 = all_hp_mob;
-		obnovlenie_stat();
-		//добавляем необходимый элемент, чтобы вся система работала как нужно
-		poluchenie_lvl_god();
-		//добавляем то, что будет даваться после убийства моба
-		opit_slot_orujie = 1;
-		opit_god -= 10;
-		all_opit_slot();
-		//обязательный возврат значений
-		opit_mob = 20;
-		lvl_mob = 1;
-		document.getElementById('visual_lvl_mob').innerHTML =  lvl_mob;
-        document.getElementById('visual_opit_god_1').innerHTML = opit_god;
-		document.getElementById('visual_hp_mob_0001').innerHTML =  'Здоровье: ' + hp_mob_0001;
-		//и объект пропадает 
-		exit_modal_all();
-		}
+		if (hp_mob_0001 <= 1) {xod_mob = 1;}
 		
-		else if (hp_mob_0001 >=1) {
+		if (hp_mob_0001 >=1) {
 		hp_mob_0001 -= god_uron;
-		raspred_ochkov_navika();
+		
+		opit_umeliy = 4;
 		 //вывод значения на экран
 	    document.getElementById('visual_hp_mob_0001').innerHTML =  'Здоровье: ' + hp_mob_0001;
 		
@@ -88,49 +71,36 @@ function hp_obnov_mob() {
 		//если жизни героя равны нулю, то Конец Битвы
 		if (all_god_hp <=1) {	
 		exit_modal_all();
-		alert ('Вы проиграли!')
+		opit_mob = 20;
+		lvl_mob = 1;
+		xod_mob = 1;
+		hp_mob_0001 = all_hp_mob;
+		alert ('Вы проиграли!')}
 			
-		}	
-	}				
+	}					
 }
 	//усиленная атака 
   function war_usilenie_hp_mob_0001() {
-		 
-		hp_mob_0001 -= (jar_uron+2) * god_uron;
-		raspred_ochkov_navika();
+		 	
+		if (hp_mob_0001 >=1) {
+		hp_mob_0001 -= god_uron*(god_jar_uron*god_uron+2);
+		
 		 //вывод значения на экран
 	    document.getElementById('visual_hp_mob_0001').innerHTML =  'Здоровье: ' + hp_mob_0001;
 		
-	     opit_mob -= 1;
+		 opit_mob -= 1;
 		 //вывод значения на экран
 	    document.getElementById('visual_opit_mob').innerHTML = opit_mob;
-	
-	
-	
-		
-	    //если Жизни равны 0
-	    if (hp_mob_0001 <= 1) {
-		//то объект пропадает 
-		
-		opit_god -= 10;
-		opit_slot_orujie = 1;
-		
-		
-		//позволяет видеть визуально прибавку к опыту персонажа
-		document.getElementById('visual_opit_god_1').innerHTML = opit_god;
-		hp_mob_0001 = 100;
-		obnovlenie_stat();
-		//добавляем необходимый элемент, чтобы вся система работала как нужно
-		poluchenie_lvl_god();
-		document.getElementById('visual_hp_mob_0001').innerHTML =  'Здоровье: ' + hp_mob_0001;
-		opit_god_ojerelie_01 -= 1;
-		exit_modal_all();
-		}
-		
 		//после вашей атаки атакует сразу моб
-		all_god_hp -= (mob_uron_0001-god_bron/2);
+	    all_god_hp -= (mob_uron_0001-god_bron/2);
+		//если жизни героя равны нулю, то Конец Битвы
+		if (all_god_hp <=1) {	
+		exit_modal_all();
+		alert ('Вы проиграли!')	
+		}	
+	}	
 		
-	 }	 
+}	 
 	
 	 //защита
 	 function war_zachita_hp_mob_0001() {
@@ -145,7 +115,6 @@ function hp_obnov_mob() {
 		
 		
 		
-		raspred_ochkov_navika();
 		 //вывод значения на экран
 	    document.getElementById('visual_hp_mob_0001').innerHTML =  'Здоровье: ' + hp_mob_0001;
 		

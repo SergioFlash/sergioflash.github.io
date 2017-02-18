@@ -47,6 +47,11 @@
 
 <body onload="obnovlenie_stat()" >
  
+<div id="visual_heroes_hp" style="display: none;" ></div>
+<div id="visual_heroes_stats_hp" style="display: none;" ></div>
+<div id="visual_item_hp" ></div>
+
+
 
 <div id="visual_opit_slot_orujie" style="display: none;" ></div>
 <div id="visual_opit_slot_obod" style="display: none;" ></div>
@@ -57,25 +62,33 @@
 <div id="visual_opit_slot_pravoe_kolso" style="display: none;" ></div>
 <div id="visual_opit_slot_braslet_leviy" style="display: none;" ></div>
 <div id="visual_opit_slot_braslet_praviy" style="display: none;" ></div>
+<!-- Навыки Хитрюга -->
+<div id="visual_navik_slot_hitryuga" style="display: none;" ></div>
+<div id="visual_bonus_aktiv_slot_navik" style="display: none;" ></div>
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-    <button onClick="javascript:poluchenie_lvl_mob_0001()+poluchenie_lvl_god()+obnovlenie_stat()" >Получить +10 опыта</button>
+
+
+    <button onClick="aktiv_navik_hitryuga()" >Активировать навык Хитрюга</button>
+	
+	<button onClick="people_bonus_all_god_resurs_vip()" >Добавить Друга</button>
+	
+	<button onClick="opit_god_lvl_vip()+obnovlenie_stat()" >Опыт Вип</button>
+	<button onClick="minus_god_energiya()+zapusk_prirost_all_god_energiya()+obnovlenie_stat()" >Уменьшение Энергии</button>
+	<button onClick="pluss_god_energiya()+obnovlenie_stat()" >Добавить 10 энергии</button>
+	<button onClick="pluss_max_god_energiya()+obnovlenie_stat()" >Добавить 10 к максимальной энергии</button>
+	<button onClick="pluss_opit_umeliy_voin()" >Поднять уровень Умелого Воина</button>
+	
+	<button id="visual_navik_slot_001"  onClick="navik_slot_umeliy_voin_01()" >Активировать навык в 1 слоте</button>
+	<button id="visual_navik_slot_001" onClick="navik_slot_umeliy_voin_02()" >Активировать навык в 2 слоте</button>
+	<button id="visual_navik_slot_001" onClick="navik_slot_umeliy_voin_03()" >Активировать навык в 3 слоте</button>
+	<button id="visual_navik_slot_001" onClick="navik_slot_umeliy_voin_04()" >Деактивировать навык</button>
+	<button id="visual_navik_slot_001" onClick="navik_slot_umeliy_voin_05()" >Активировать на постоянную навык</button>
+	
+	<button onClick="lokation_batle_lvl_mob()" >поднять уровень моба от локации</button>
 	
 	
 	
 	
-	<button id="di_mob_0001" onClick="javascript:raspred_ochkov_navika()" >Распределить очки</button>
-	
-	<button onClick="opit_god_oruzie()+obnovlenie_stat()" >Опыт снаряжения</button>
 	
 	
 	
@@ -83,21 +96,17 @@
 	
 	
 	
-	<button onClick="javascript:people_bonus_all_god_resurs_vip()" >Добавить Друга</button>
 	
-	<button onClick="javascript:opit_god_lvl_vip()+obnovlenie_stat()" >Опыт Вип</button>
-	<button onClick="javascript:minus_god_energiya()+zapusk_prirost_all_god_energiya()+obnovlenie_stat()" >Уменьшение Энергии</button>
-	<button onClick="javascript:pluss_god_energiya()+obnovlenie_stat()" >Добавить 10 энергии</button>
-	<button onClick="javascript:pluss_max_god_energiya()+obnovlenie_stat()" >Добавить 10 к максимальной энергии</button>
-	<button onClick="javascript:pluss_opit_umeliy_voin()" >Поднять уровень Умелого Воина</button>
 	
-	<button onClick="javascript:navik_slot_umeliy_voin_01()" >Активировать навык в 1 слоте</button>
-	<button onClick="javascript:navik_slot_umeliy_voin_02()" >Активировать навык в 2 слоте</button>
-	<button onClick="javascript:navik_slot_umeliy_voin_03()" >Активировать навык в 3 слоте</button>
-	<button onClick="javascript:navik_slot_umeliy_voin_04()" >Деактивировать навык</button>
-	<button onClick="javascript:navik_slot_umeliy_voin_05()" >Активировать на постоянную навык</button>
 	
-	<button onClick="javascript:lokation_batle_lvl_mob()" >поднять уровень моба от локации</button>
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -243,6 +252,12 @@
     <div id="a_003"><div id="windows_osnovnoe">
     <!-- Можно внести данные в модальное окно -->
 	<p id="visual_navik_heroes">Навыки</p>
+	
+	<p><img src="umeliy_voin.jpg"></img></p>
+	
+	
+	
+	
     <!-- Окончание внесения данных -->
     
     </div></div>
@@ -300,7 +315,7 @@
 	<p id="visual_all_god_hp" ></p>
 	<p id="visual_hp_mob_0001" ></p>
 	<p id="visual_batle_lvl_mob" ></p>
-	
+	<p id="visual_xod_mob" ></p>
 	
 	<p id="visual_opit_mob" ></p>
 	<p id="visual_lvl_mob" ></p>

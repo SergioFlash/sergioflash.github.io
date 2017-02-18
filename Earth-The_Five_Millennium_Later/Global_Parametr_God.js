@@ -1,12 +1,22 @@
 ﻿     
 	
+	//Показатели которые появляются от снаряжения
+	var item_hp_oruzie; {item_hp_oruzie = 0;}
+	var item_hp_obod; {item_hp_obod = 0;}
+	
+	
+	
 	
 	//Здоровье 
 	 
 	 //любая прибавка к жизням на постоянную идет в это значение god_hp;
+	 var heroes_hp; {heroes_hp = 100;}
 	 var god_hp; {god_hp = 0;} 
-	 //обращаясь к этому значению мы можем временно добавлять параметры
-	 var all_god_hp; {god_hp = all_god_hp = 100;}
+	 var all_god_hp; {all_god_hp = 0;}	 
+	 var item_hp; {item_hp = 0;}
+	 var all_item_hp; {all_item_hp = 0;}
+	 var heroes_stats_hp; {heroes_stats_hp = 0;}
+	 
 	 //Броня
      	 
 	 var god_bron; {god_bron = 0;}
@@ -112,8 +122,19 @@
 	
 	
 	
-	
-	
+setInterval(function obnova_statistik_heroes(){
+
+god_hp = heroes_hp+item_hp+heroes_stats_hp;
+
+item_hp = all_item_hp;
+
+all_item_hp = item_hp_oruzie+item_hp_obod;
+
+document.getElementById('visual_heroes_stats_hp').innerHTML = 'Здоровье от статов:  ' + heroes_stats_hp;
+document.getElementById('visual_god_hp').innerHTML = 'Здоровье:  ' + god_hp;
+document.getElementById('visual_heroes_hp').innerHTML = heroes_hp;
+document.getElementById('visual_item_hp').innerHTML = 'Жизни ' + item_hp;
+}, 1000)
 	
 	
 	
@@ -121,7 +142,7 @@
 	
 	
 	//обновление данных 
-	function obnovlenie_stat() {
+function obnovlenie_stat() {
 	document.getElementById('visual_god_hp').innerHTML = 'Здоровье:  ' + god_hp;
 	document.getElementById('visual_god_bron').innerHTML = 'Защита:  ' + god_bron;
 	document.getElementById('visual_lvl_god_1').innerHTML =  'Уровень:  ' + lvl_god;
@@ -206,7 +227,7 @@ document.getElementById('visual_opit_slot_braslet_praviy').innerHTML = opit_slot
 
 	
 	
-	
+document.getElementById('visual_xod_mob').innerHTML = 'Ход: ' + xod_mob;	
 	
 	//Визуализация Навыков
 	document.getElementById('visual_umeliy_voin').innerHTML = 'Навык Умелый Воин:   ' + umeliy_voin;
@@ -215,12 +236,132 @@ document.getElementById('visual_opit_slot_braslet_praviy').innerHTML = opit_slot
 	document.getElementById('visual_bonus_opit_slot').innerHTML = bonus_opit_slot;
 	
 	document.getElementById('visual_navik_slot').innerHTML = 'Навык Слот:   ' + navik_slot_umeliy_voin;
+
+
+	
+	 if (hp_mob_0001 <= 1) {
+		hp_mob_0001 = all_hp_mob;
+		obnovlenie_stat();
+		//добавляем необходимый элемент, чтобы вся система работала как нужно
+		poluchenie_lvl_god();
+		//добавляем то, что будет даваться после убийства моба
+		opit_slot_orujie = 1;
+		opit_god -= 10;
+		all_opit_slot();
+		//обязательный возврат значений
+		opit_mob = 20;
+		lvl_mob = 1;
+		
+		opit_umeliy_voin -= 500;
+		
+		
+		
+		//и объект пропадает 
+		exit_modal_all();
+		document.getElementById('visual_opit_umeliy_voin').innerHTML = 'Навык Умелый Воин:   ' + opit_umeliy_voin;
+		}
+
+//Навык Умелый Воин
+if (navik_slot_umeliy_voin == 1) {opit_umeliy_voin -= opit_umeliy; }
+else if (navik_slot_umeliy_voin == 2) {opit_umeliy_voin -= opit_umeliy; }
+else if (navik_slot_umeliy_voin == 3) {opit_umeliy_voin -= opit_umeliy; }
+else if (navik_slot_umeliy_voin == 0) {opit_umeliy_voin = 1000;}
+else if (navik_slot_umeliy_voin == 4+bonus_aktiv_slot_navik) {opit_umeliy_voin -= opit_umeliy; }
+document.getElementById('visual_navik_slot').innerHTML = 'Навык Слот:   ' + navik_slot_umeliy_voin;	
+if (umeliy_voin<=1) {bonus_opit_slot = 0;}
+else if (umeliy_voin<=2) {bonus_opit_slot = 2;}		
+else if (umeliy_voin<=3) {bonus_opit_slot = 4;}
+else if (umeliy_voin<=4) {bonus_opit_slot = 6;}
+else if (umeliy_voin<=5) {bonus_opit_slot = 8;}
+else if (umeliy_voin<=6) {bonus_opit_slot = 10;}
+else if (umeliy_voin<=7) {bonus_opit_slot = 12;}
+else if (umeliy_voin<=8) {bonus_opit_slot = 14;}
+else if (umeliy_voin<=9) {bonus_opit_slot = 16;}
+else if (umeliy_voin<=10) {bonus_opit_slot = 18;}
+else if (umeliy_voin<=15) {bonus_opit_slot = 20;}
+else if (umeliy_voin<=20) {bonus_opit_slot = 22;}
+else if (umeliy_voin<=25) {bonus_opit_slot = 24;}
+else if (umeliy_voin<=50) {bonus_opit_slot = 26;}
+else if (umeliy_voin<=100) {bonus_opit_slot = 28;}
+else if (umeliy_voin<=150) {bonus_opit_slot = 50;}
+else if (umeliy_voin<=250) {bonus_opit_slot = 100;}
+else if (umeliy_voin<=500) {bonus_opit_slot = 250;}
+else if (umeliy_voin>=1000)	{bonus_opit_slot = 500; opit_umeliy_voin = 1000;}		
+if (opit_umeliy_voin<=1) {
+		umeliy_voin += 1;
+		opit_umeliy_voin = 1000;
+		document.getElementById('visual_opit_umeliy_voin').innerHTML = 'Навык Умелый Воин:   ' + opit_umeliy_voin;
+}	
+	
+	
+//навык "Хитрюга"
+if (navik_slot_hitryuga == 5) {		
+	bonus_aktiv_slot_navik = 1;
+document.getElementById('visual_navik_slot_hitryuga').innerHTML = 'Навык Слот Хитрюги:   ' + navik_slot_hitryuga;
+document.getElementById('visual_bonus_aktiv_slot_navik').innerHTML = 'Хитрюга Активный:   ' + bonus_aktiv_slot_navik;	
+}	
+	
+
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
 	
 	
 	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
 	
-	
-	} 
+} 
 
 
 	
@@ -303,7 +444,7 @@ document.getElementById('visual_people_bonus_donat_all_god_opit_lvl_vip').innerH
 		opit_god = all_opit_god;
 		polosa_opit_level_heroes.width = 800;
 		//добавляем дальше статы, которые будут добавляться с каждым уровнем
-		god_hp += 100;
+		heroes_stats_hp += 100;
 		god_bron += 5;
 		god_uron += 10;
 		all_level_god = lvl_god;

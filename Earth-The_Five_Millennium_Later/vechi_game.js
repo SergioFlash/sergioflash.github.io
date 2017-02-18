@@ -142,7 +142,7 @@ opit_god_braslet_praviy();
 	    document.getElementById('visual_item_god_odejda').innerHTML = opit_god_odejda_01;
 	    if (opit_god_odejda_01 <= 1) {
 		god_bron += 10;
-		god_hp += 100;
+		heroes_stats_hp += 100;
 		
 		level_god_odejda += 1;
 		document.getElementById('visual_level_god_odejda').innerHTML = 'Уровень:  ' + level_god_odejda;
@@ -168,7 +168,7 @@ opit_god_braslet_praviy();
 	    document.getElementById('visual_item_god_ojerelie').innerHTML = opit_god_ojerelie_01;
 	    if (opit_god_ojerelie_01 <= 1) {
 		god_bron += 5;
-		god_hp += 50;
+		heroes_stats_hp += 50;
 		god_uron += 1;
 		god_mana += 1;
 		
